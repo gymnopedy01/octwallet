@@ -1,5 +1,6 @@
 package com.project.octwallet.controller;
 
+import com.project.octwallet.dto.Address;
 import com.project.octwallet.service.AddressService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,9 +22,10 @@ public class AddressController {
 
     @GetMapping("childaddresses")
     public String childaddresses(Model model) {
-        List list = addressService.getChildAddresses(140);
 
+        List<Address> list = addressService.getChildAddresses();
         model.addAttribute("childaddresses", list);
+
         return "address/childaddresses";
     }
 

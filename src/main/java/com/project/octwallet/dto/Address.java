@@ -3,15 +3,13 @@ package com.project.octwallet.dto;
 import lombok.Data;
 
 @Data
-public class WalletInfo {
+public class Address {
     String idx;
+    String address;
     String name;
+    String derivationIndex;
     String type;
-    String keyManagementType;
-    String childAddressType;
     String status;
-    Address mainAddress;
-    Address feeAddress;
     String createdDate;
     String modifiedDate;
 }
