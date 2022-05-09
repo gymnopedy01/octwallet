@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>O 월렛</title>
+</head>
+<body>
+
+<p th:text="child-addresses"/>
+
+<ul>
+    <li th:each="child : ${childaddresses}" th:text="${child.idx + ' ' + child.address}" />
+</ul>
+
+
+<form th:action="@{child-addresses/create}" th:method="POST">
+    <input type="submit" value="계정생성"/>
+</form>
+
+</body>
+</html>

@@ -1,4 +1,4 @@
-package com.project.octwallet.dto;
+package com.project.octwallet.dto.response;
 
 import lombok.Data;
 

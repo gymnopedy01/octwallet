@@ -1,6 +1,6 @@
 package com.project.octwallet.service;
 
-import com.project.octwallet.dto.WalletInfo;
+import com.project.octwallet.dto.response.WalletInfo;
 import com.project.octwallet.operation.OctetOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
